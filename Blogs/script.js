@@ -1,16 +1,21 @@
-const url = "ttps://jsonplaceholder.typicode.com";
+const urlApi = "https://jsonplaceholder.typicode.com";
 const mainSection = document.getElementById("posts");
 
-//Realizamos la llamada al API 
-fetch(url+"/post") //Llama a la url
-    .then(function(response) {
-        return response.json(); //Cuando responde, las respuestas son formateadas como JSON
-    })
-    .then(function(json){
-        for(let i = 0; i < json.lenght; i++){
-            let articlePost = document.createElement("article");
-            let articleTitulo = document.createElement("h2");
-            let articleBody = document.createElement("p");
-            articleTitulo.innerHTML
-        }
-    })
+// Realizamos la llamada a la API
+fetch(urlApi+"/posts") // Esto hace la llamada a la URL
+  .then(function(response) {
+    return response.json(); // Cuando responde, formateo la respuestas como JSON
+  })
+  .then(function(json) { // En este bloque hago lo que quiero con el JSON
+    for(let i=0; i < json.length; i++){
+        // Forma 1 de hacerlo
+        let articlePost = document.createElement("article");
+        let articleTitulo = document.createElement("h2");
+        let articleBody = document.createElement("p");
+        articleTitulo.innerHTML = json[i].title;
+        articleBody.innerHTML = json[i].body;
+        articlePost.appendChild(articleTitulo);
+        articlePost.appendChild(articleBody);
+        mainSection.appendChild(articlePost);
+    }
+  });
