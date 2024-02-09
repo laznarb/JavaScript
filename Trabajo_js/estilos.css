@@ -1,0 +1,13 @@
+#personaje{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#personaje div{
+    border: 1px solid black;
+    width: 300px;
+}
+
+#personaje div img{
+    width: 100%;;
+}
