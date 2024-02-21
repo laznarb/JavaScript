@@ -1,9 +1,9 @@
 let nombreUsuario = document.getElementById("usuario");
 let contraUsuario = document.getElementById("contra");
-let terminosUsuario = document.getElementById("condiciones");
+let terminosUsuario = document.getElementById("terminos");
 let formularioUsuario = document.getElementById("formulario");
 
-let msgID = document.getElementById("mayus");
+let msgNombre = document.getElementById("mayus");
 let msgPass = document.getElementById("num");
 let msgTerm = document.getElementById("aceptar");
 
