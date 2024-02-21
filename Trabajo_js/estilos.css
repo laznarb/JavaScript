@@ -1,11 +1,26 @@
+body{
+    background-image: url(imagenes/fondo1.jpg);
+}
+
+h1{
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+
 #personaje{
     display: flex;
     flex-wrap: wrap;
 }
 
 #personaje div{
-    border: 1px solid black;
-    width: 300px;
+    border: 1px solid;
+    text-align: center;
+    width:450px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
 }
 
 #personaje div img{

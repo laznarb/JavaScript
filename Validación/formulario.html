@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <ul>
+        <li id="mayus" style="color:red">El nombre del usuario debe empezar por mayúscula</li>
+        <li id="num" style="color:red">El password tiene que tener al menos 1 número</li>
+        <li id="aceptar" style="color:red">Debes aceptar los terminos y condiciones</li>
+    </ul>
+
+    <form id="formulario">
+        <fieldset>
+            <label for="usuario">Nombre usuario:</label>
+            <input type="text" name="user" id="usuario"><br>
+            <label for="contra">Password</label></label>
+            <input type="text" name="pass" id="contra"><br>
+            <input type="checkbox" name="term" id="terminos"><label for="terminos">Acepto terminos y condiciones</label></label><br>
+            <input type="submit" value="Enviar"/>
+        </fieldset>
+    </form>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
