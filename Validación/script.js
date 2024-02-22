@@ -27,7 +27,6 @@ function validarPass() {
 
 function validarNombre() {
     let nombreRecogido = nombreUsuario.value;
-    // Comprobar si el nombre comienza con mayúscula
     if (/^[A-Z]/.test(nombreRecogido)) {
         msgNombre.style.color = "green";
     } else {
@@ -36,6 +35,6 @@ function validarNombre() {
 }
 
 
-idUsuario.addEventListener("change", validarNombre);
-passUsuario.addEventListener("input", validarPass);
+nombreUsuario.addEventListener("input", validarNombre);
+contraUsuario.addEventListener("input", validarPass);
 terminosUsuario.addEventListener("input", validarTerm);
